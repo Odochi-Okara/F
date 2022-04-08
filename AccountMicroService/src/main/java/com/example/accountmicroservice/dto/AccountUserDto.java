@@ -10,7 +10,7 @@ public class AccountUserDto {
 
     private String namess;
 
-    private String email;
+    private String emailss; //check;
 
     private String password;
 
