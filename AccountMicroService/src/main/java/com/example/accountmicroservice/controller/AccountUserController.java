@@ -22,7 +22,7 @@ public class AccountUserController {
         this.accountUserService = accountUserService;
     }
 
-    @PostMapping("user")
+    @PostMapping("/")
     public ResponseEntity<RegistrationResponse> createUser(AccountUserDto accountUserDto){
         return accountUserService.registerUser(accountUserDto);
     }

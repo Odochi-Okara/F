@@ -39,4 +39,9 @@ public class AccountUserServiceImpl implements AccountUserService {
         }
         throw new ApiBadRequestException("User exists");
     }
+
+    @Override
+    public AccountUser findUserById(Long userId) {
+        return accountUserRepository.findAccountUserById(userId);
+    }
 }
