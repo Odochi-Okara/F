@@ -8,7 +8,7 @@ import lombok.*;
 @Data
 public class AccountUserDto {
 
-    private String namess;
+    private String name; // correction;
 
     private String email;
 
