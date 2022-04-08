@@ -11,12 +11,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class AccountServiceImp implements AccountService {
 
-    private final AccountRepository accountRepository;
+    private final AccountRepository accountR;
     private final AccountUserService accountUserService;
 
 
     public AccountServiceImp(AccountRepository accountRepository, AccountUserService accountUserService) {
-        this.accountRepository = accountRepository;
+        this.accountR = accountRepository;
         this.accountUserService = accountUserService;
     }
 
@@ -25,7 +25,7 @@ public class AccountServiceImp implements AccountService {
         AccountUser accountUser = accountUserService.findUserById(userId);
         Account account = new Account();
         account.setAccountUser(accountUser);
-        accountRepository.save(account);
+        accountR.save(account);
         return ResponseEntity.ok(account);
     }
 
