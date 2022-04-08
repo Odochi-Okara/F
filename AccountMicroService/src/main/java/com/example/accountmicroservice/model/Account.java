@@ -14,7 +14,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Builder
 public class Account extends BaseModel {
-    private String acountName;
+    private String accountName;
     private AccountType accountType;
     private Long accountNumber;
     @OneToOne

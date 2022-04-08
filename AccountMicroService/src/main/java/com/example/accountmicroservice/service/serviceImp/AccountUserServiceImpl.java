@@ -29,7 +29,7 @@ public class AccountUserServiceImpl implements AccountUserService {
 
         if(!accountUser.isPresent()){
             AccountUser accountUser1 = new AccountUser();
-            accountUser1.setName(accountUserDto.getName());
+            accountUser1.setName(accountUserDto.getNames());
             accountUser1.setEmail(accountUserDto.getEmail());
             accountUser1.setPassword(accountUserDto.getPassword());
             accountUser1.setPhone(accountUserDto.getPhone());
