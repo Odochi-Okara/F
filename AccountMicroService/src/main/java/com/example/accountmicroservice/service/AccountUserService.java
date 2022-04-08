@@ -8,4 +8,5 @@ import org.springframework.http.ResponseEntity;
 
 public interface AccountUserService {
       ResponseEntity<RegistrationResponse> registerUser(AccountUserDto accountUserDto);
+      AccountUser findUserById(Long userId);
 }
